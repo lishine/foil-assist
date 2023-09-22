@@ -9,7 +9,7 @@ const config: DocsThemeConfig = {
   chat: {
     link: "https://discord.com",
   },
-  docsRepositoryBase: "https://github.com/lishine/foil-assist",
+  docsRepositoryBase: "https://github.com/lishine/foil-assist/tree/main",
   footer: {
     text: "Nextra Docs Template",
   },
