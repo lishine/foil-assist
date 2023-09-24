@@ -1,1 +1,1 @@
-View the website [Foil Asssit](https://foil-assist.vercel.app){:target="\_blank" rel="noopener"}.
+View the website [go](https://foil-assist.vercel.app){:target="\_blank"}
