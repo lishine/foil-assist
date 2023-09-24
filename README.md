@@ -1,1 +1,7 @@
-View the website [go](https://foil-assist.vercel.app){:target="_blank"}
+### Deployment
+
+View the website [Foil Asssit](https://foil-assist.vercel.app)
+
+### Development
+
+Built with Nextra
