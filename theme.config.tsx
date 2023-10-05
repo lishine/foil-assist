@@ -1,7 +1,16 @@
 import React from "react";
 import { DocsThemeConfig } from "nextra-theme-docs";
+import { Comments } from "components/comments";
 
 const config: DocsThemeConfig = {
+  main: ({ children }) => {
+    return (
+      <>
+        {children}
+        <Comments />
+      </>
+    );
+  },
   logo: <span>Foil Assist</span>,
   project: {
     link: "https://github.com/lishine/foil-assist",
@@ -11,7 +20,9 @@ const config: DocsThemeConfig = {
     text: "Welcome to the foil assist",
   },
   useNextSeoProps: () => {
-    return {};
+    return {
+      description: "Foil assist",
+    };
   },
 };
 
