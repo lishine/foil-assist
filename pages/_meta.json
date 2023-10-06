@@ -1,5 +1,7 @@
 {
-  "index": "Home",
+  "index": {
+    "title": "Home"
+  },
   "factors": "",
   "current-draw": "",
   "box-mount": "",

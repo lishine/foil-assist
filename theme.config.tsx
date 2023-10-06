@@ -21,7 +21,7 @@ const config: DocsThemeConfig = {
   },
   useNextSeoProps: () => {
     return {
-      description: "Foil assist",
+      description: "",
     };
   },
 };
