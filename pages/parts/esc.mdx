@@ -1,29 +1,40 @@
-### Choice
+#### Choose
 
-- VESC 6.7 - ask Loyaltothefoil 8s3p
-- flycolor marine 150A 6s max, Turnigy Marine ESC 150A (thermal limit after 15s)
-- Flycolor Flydragon 150A HV 12s
-- MGM controllers - p19 max short time current
-- gzmann: Fly color esc FLYDRAGON-Pro-80A-HV2/3
-- 120F3[X]v2 12s $120 120-200A
-- Freely arc200 ESC has logs
-- don't buy makerX
+12s options:
 
-### Considerations
+- Flycolor
+  - Flydragon 150A HV $90 - **The most popular**
+  - FLYDRAGON-Pro-80A-HV2/3 $34 - _Suggested as a low cost option, not tested yet_
+- Flipsky VESC 6.7 - @Loyaltothefoil build using 8s3p battery
 
-- programming through bluetoth
-- vesc in order to connect to maytech remote
-- "VESC allows a lot of tuning and monitoring, including a soft ramp on startup which should make printed props last longer"
+6s options:
+
+- Flycolor 150A $45, Turnigy Marine ESC 150A $55\
+  _thermal limit reported_
+
+Additional:
+
+- MGM controllers - @tosh.jah - https://foil.zone/t/foil-drive-assist-diy/12927/666?u=lishine
+- APD 120F3[X]v2 12s $120 120-200A - @Gazman79 - https://foil.zone/t/esc-sizing-for-efficiency/17910
+- Freely arc200 ESC: advantage - has logs, but nowhere to be found
+- MakerX not recommended : https://foil.zone/t/foil-drive-assist-diy/12927/299
+
+#### Features
+
+- Programming through bluetoth
+- HV BEC to power the receiver
+- Vesc connects to maytech remote - you get more data on the remote
+- Logging
+
+> VESC allows a lot of tuning and monitoring, including a soft ramp on startup which should make printed props last longer
 
 > Yes that is the one. you want the v3 version. It has the heat reduction programming which actually works. Unfortunately the v3 version only has timing that can be changed. It does not have low voltage cutoff or over temp cutoff. The v2 has all these features but it doesnt have the heat reduction option. This esc doesnt get hot with the externalized cooling plate, and I know when the voltage is getting too low. 120F3[X]v2 12s $120 120-200A
 
-- hv bec to power the receiver
+> BDLC controllers are more efficient than VESC for Foil assistant - @rttn
 
-> rttn: BDLC controllers are more efficient than VESC for Foil assistant
+#### Esc cooling
 
-### esc cooling
-
-- thermal pad
-- high temp epoxy
+- Thermal pad
+- High temp epoxy
 - 3m 5200 fast cure to glue through the box
-- important: cooiling enough for esc
+- Important: cooiling enough the Esc
