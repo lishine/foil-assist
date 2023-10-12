@@ -19,4 +19,5 @@ TODO
 
 - maintanence
 - foil drive parts
--
+- 3d pod files
+- update builds
