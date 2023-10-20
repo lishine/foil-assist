@@ -16,11 +16,21 @@ Then, run `pnpm dev` to start the development server and visit localhost:3000.
 
 TODO
 
-- maintanence
 - foil drive parts
 - 3d pod files
-- update builds
 - fix meta tags
 - add to the forum
+- to open a topic about vesc logging, include: express, vesc by itself with gps, voyage systems, include all the info that I know
+
+Investigate:
+
 - rx: measure temperature
 - BEC
+- Charger
+- BMS
+- Battery temperature measure to logger
+- static testing
+- isolation materials for battery
+- logging - integration with bms
+
+- ?????? links in chrome
