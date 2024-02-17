@@ -4,7 +4,6 @@ https://foil-assist.vercel.app/
 
 # TODO
 
-- list of foil drive parts
 - motor pod cad files
 - fix meta tags
 - WILL NOT DO to open a topic about vesc logging, include: express, vesc by itself with gps, voyage systems, include all the info that I know
