@@ -38,3 +38,18 @@ With VESC - not for now:
 
 - BMS inside: Dally + balance + CAN + blue/blue+wifi + NTC
 - logging: voyage systems
+
+### motor mount
+
+#### Straps
+
+search for - secure straps, tension straps, tie down
+names: titan, grunt
+
+The 'additional details' move to another header - and it is different motor
+separate links by motor kind
+
+build of @Jan
+
+- photos
+- video
