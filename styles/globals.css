@@ -1,0 +1,14 @@
+/* Make content area full width - sidebar and TOC stick to edges */
+.nextra-content main {
+  max-width: 100% !important;
+}
+
+/* Remove the 90rem constraint on the outer layout wrapper */
+.nextra-nav-container + div > .nx-mx-auto {
+  max-width: 100% !important;
+}
+
+/* Also target via attribute selector for the bracketed Tailwind class */
+div[class*="max-w-\[90rem\]"] {
+  max-width: 100% !important;
+}
