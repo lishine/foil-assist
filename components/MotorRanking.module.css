@@ -143,28 +143,34 @@
 
 .detailHeader {
   display: flex;
-  align-items: baseline;
-  gap: 12px;
-  margin-bottom: 0.75rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid #e5e7eb;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 1rem;
+  padding: 14px 18px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #2d2b55 100%);
+  border-radius: 8px;
+  color: #fff;
 }
 
 .detailRank {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 800;
-  color: #1a1a2e;
+  color: #fbbf24;
   min-width: 40px;
+  text-align: center;
+  line-height: 1;
 }
 
 .detailName {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 700;
+  color: #fff;
+  flex: 1;
 }
 
 .detailUsers {
-  font-size: 0.9rem;
-  color: #666;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.7);
   font-weight: 400;
 }
 
