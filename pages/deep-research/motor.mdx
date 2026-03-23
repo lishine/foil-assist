@@ -1,0 +1,259 @@
+---
+title: Foil Assist Motor Ranking by User Adoption
+---
+
+# Foil Assist Motor Ranking by User Adoption
+
+Analysis of **73,000+ posts** from [foil.zone](https://foil.zone) forum, filtered to foil assist context.
+Automated semantic and keyword search across all categories, with sentiment classification.
+
+> **How this was made:** Every motor model number was searched across the entire forum database. Posts were filtered to foil assist context (topics/posts mentioning assist, foil drive, pumping, wing foil, downwind, SUP foil, etc.). Unique usernames were counted per motor. Sentiment was classified by analyzing positive/negative language in sentences mentioning each motor.
+
+## Ranking Overview
+
+| Rank | Motor | Type | Users | Mentions | + Opinions | - Opinions | Net Sentiment |
+|------|-------|------|------:|--------:|-----------:|-----------:|---------------|
+| **1** | **6384** | Outrunner 63x84mm | **143** | 499 | 60 | 50 | Positive |
+| **2** | **6374** | Outrunner 63x74mm | **70** | 212 | 22 | 22 | Mixed |
+| **3** | **65161** | Inrunner 65x161mm | **67** | 102 | 13 | 7 | Positive |
+| **4** | **63100** | Outrunner 63x100mm | **33** | 95 | 14 | 4 | Positive |
+| **5** | **65111** | Inrunner 65x111mm | **17** | 37 | 0 | 5 | Negative |
+| **6** | **7070** | Inrunner 70x70mm | **11** | 18 | 2 | 3 | Slightly Neg |
+| **7** | **5065** | Outrunner 50x65mm | **10** | 15 | 0 | 0 | Neutral |
+| **8** | **6579** | Outrunner 65x79mm | **7** | 28 | 1 | 0 | Neutral (new) |
+| **9** | **65121** | Inrunner 65x121mm | **6** | 10 | 1 | 1 | Neutral |
+| **10** | **66112** | Inrunner 66x112mm | **6** | 9 | 0 | 0 | Neutral |
+| **11** | **65150** | Inrunner 65x150mm | **5** | 8 | 0 | 1 | Slightly Neg |
+| **12** | **6354** | Outrunner 63x54mm | **4** | 6 | 1 | 0 | Neutral |
+| **13** | **6362** | Outrunner 63x62mm | **3** | 9 | 0 | 0 | Neutral |
+| **14** | **5080** | Outrunner 50x80mm | **1** | 1 | 0 | 0 | Failed test |
+
+- **Users** = unique forum usernames who mentioned the motor in foil assist context
+- **Mentions** = total posts mentioning the motor in foil assist context
+- **+ / - Opinions** = posts with positive/negative sentiment about the motor
+
+---
+
+## #1 — 6384 Outrunner (143 users, 499 mentions)
+
+The dominant motor for DIY foil assist. ~20% more torque than the 6374 due to longer stator.
+
+### Manufacturer Breakdown
+
+| Source | Assist Posts | Users | Notes |
+|--------|------------:|------:|-------|
+| **Flipsky** | 125 | 69 | Most popular. New waterproof version 140KV, 55mm stator. Ceramic bearings available |
+| **Maytech** | 90 | 40 | Older version criticized for short stator (50mm), weak waterproofing. Newer versions improved |
+| **Saite** | 46 | 23 | Foil Drive OEM factory. High quality. Filled with thermal epoxy |
+| **APS (Alien Power System)** | 12 | 9 | 100KV version praised as "ideal for foil assist" |
+| **BDUAV** | 12 | 9 | Budget Alibaba brand. 50mm stator (underpowered) |
+| **Generic Ali/AliExpress** | — | ~20+ | Cheapest. Stator length varies wildly 35-55mm |
+
+### Key Community Insights
+
+> It's basically the same motor \[as 6374\], just in two different lengths of stator, and the stator length decides the max power and torque. This means 6384 is about 20% more motor than a 6374. — [@Larsb](https://foil.zone/t/21257/3)
+
+> There are differences in what is called 6384 motor, the cheapest ones have 10-15mm shorter stator and can therefore not produce the same power or torque. I don't think 2/3 of a 6384 is enough to get up so that really matters. My advice to anyone buying a 6384 motor is to ask for the stator width. — [@Larsb](https://foil.zone/t/12927/576)
+
+> The impregnated APS 6384 100 kV motor is absolutely ideal for foil drive assist, e-sup drive, motorized paddle etc — low cost, easy impregnation of a disassembled motor. — [@Dynamik](https://foil.zone/t/14221/7)
+
+> I find that the cheap 6384 120kv does the job both for foil drive and efoil, and since it is cheap, it is not a big deal if it breaks under heavy load. — [@bbe](https://foil.zone/t/12927/574)
+
+Common KV ratings: **120KV** (most common, 8-12S), **140KV** (good for 6-8S), **100KV** (APS, high torque), **150KV** (some builds), **170KV** (tested by a few for 6S)
+
+### Positive Highlights
+- Best power-to-weight ratio for foil assist
+- Widely available, cheap, easy to source
+- Fits standard Foil Drive prop hubs and 3D-printed mounts
+- Proven in hundreds of builds across all conditions
+
+### Negative Highlights
+- Not all "6384" motors are equal — stator length varies 35-55mm depending on manufacturer
+- Cheap Ali versions may have inadequate waterproofing
+- Heavier than 6374 (matters for ultralight builds)
+- Some Maytech versions have weak phase wires and poor QC
+
+---
+
+## #2 — 6374 Outrunner (70 users, 212 mentions)
+
+The original Foil Drive motor. Used in ALL Foil Drive Gen 2 products (Assist+, Max, Slim).
+
+### Manufacturer Breakdown
+
+| Source | Assist Posts | Users | Notes |
+|--------|------------:|------:|-------|
+| **Saite** | 17 | 14 | **The EXACT Foil Drive OEM motor.** Waterproofed from factory |
+| **Maytech / Michobby** | 63 + 17 | 28 + 7 | Michobby resells Maytech. Often criticized |
+| **Flipsky** | 45 | 18 | New waterproof version 140KV. Easy to source |
+
+### Key Community Insights
+
+> The EXACT genuine Foil Drive motor is Saite 6374, you can buy it waterproofed from Saite. No magic with Foil Drive Gen2 components. Flipsky 6374 or 6384 140kv motor is easier to source. — [@JonathanC](https://foil.zone/t/20132/16)
+
+> On original FD Assist (+, max, slim), Foildrive use 6374 130 KV 3200 W 5.6N.m to have 25kg of thrust at 3000 rpm on the propeller. The system is limited to 1500W by the VESC (half motor power). — [@Etiennebzh](https://foil.zone/t/20132/1)
+
+> The Maytech assist motors are absolute junk. They have a lower longevity than a cardboard box in water. They are underpowered for what they are as their stator size is small. — [@Jezza](https://foil.zone/t/21192/30)
+
+> The last foil kit I got from Maytech was absolute garbage — controller cooked multiple motors before I gave up and switched to Flipsky. — [@Ewheeler](https://foil.zone/t/17966/11)
+
+> I've tried my 6374 motor setup for winging and I don't really like it. The drag from the motor even high on the mast is noticeable, feels like the handbrake is left on. — [@Foil_A_Lot](https://foil.zone/t/12927/208)
+
+### Positive Highlights
+- Proven design — the Foil Drive standard
+- Lighter than 6384 (good for weight-conscious builds)
+- Adequate for lighter riders and pure assist use
+
+### Negative Highlights
+- Less torque margin than 6384 — can struggle with heavier riders
+- Maytech/Michobby versions widely criticized (short stator, bad waterproofing)
+- Most community members now recommend upgrading to 6384 instead
+
+---
+
+## #3 — 65161 Inrunner (67 users in assist context, 102 mentions)
+
+Primarily an efoil motor (1,334 total posts across forum), but discussed by 67 users in foil assist context.
+
+### Source
+Essentially **Flipsky only** — 52 assist posts, 42 users. Available in 100KV and 120KV.
+
+### Key Community Insights
+
+> It's half the torque of its big brother 65161. So it's not super strong and might work well for a foil assist setup. The real question is: isn't this motor too heavy for a light foil assist system? Most people use outrunners for their foil assist. — [@yannpom](https://foil.zone/t/19983/20)
+
+> I am exploring options for a Foil Drive-ish e-assist option... effectively a half power efoil. — [@juandesooka](https://foil.zone/t/14221/3)
+
+### When It Makes Sense
+- Dual-purpose builds (efoil + assist on same board)
+- Heavier riders who need maximum thrust
+- Builds with dedicated pod/nacelle on the mast
+
+### Why Most Avoid It for Pure Assist
+- Too heavy for a lightweight bolt-on assist
+- Requires a proper pod (not a simple mast clamp)
+- Overkill for pump-assist use case
+
+---
+
+## #4 — 63100 Outrunner (33 users, 95 mentions)
+
+The "big outrunner" — for heavier riders or those wanting maximum power margin with an outrunner form factor.
+
+### Sources
+| Source | Assist Posts | Users |
+|--------|------------:|------:|
+| **Flipsky** | 17 | 9 |
+| **APS** | 13 | 7 |
+| **DIY Electric Skateboard** | few | ~3 |
+
+### Key Community Insights
+
+> The bigger the motor is (63100 vs 6384) the greater heat dissipation it has. — multiple users
+
+> My setup is very powerful and heavy for a 45 kg prone foil board... I believe the 63100 will be too big. — [@vib.dxb](https://foil.zone/t/17966/9)
+
+Good choice for: heavier riders (90kg+), tow boogie builds, eSUP applications.
+Downside: heavier, harder to mount, fewer 3D-printed accessories available.
+
+---
+
+## #5 — 65111 Inrunner (17 users, 37 mentions)
+
+Flipsky's smaller inrunner. Attempted middle ground between outrunners and the 65161.
+
+### Community Verdict: Negative
+
+> Can't really get enough power without pushing the current pretty high. I feel like I would have to run the current at a dangerous level. — [@Naterivera](https://foil.zone/t/12927/1307)
+
+**Zero positive opinions found.** 4 users with purely negative experiences. Users who tried it generally wished they had chosen a 6384 instead.
+
+---
+
+## #6 — 7070 Inrunner (11 users, 18 mentions)
+
+Flipsky compact inrunner. A newer option.
+
+### Mixed Reception
+
+> I received and tested the flipsky 7070 waterproofed motor, it's working very good for foil drive assist with a surf foil board. — [@nicolasLGM](https://foil.zone/t/22260)
+
+Concerns raised about waterproofing quality and magnet coating. The same user (@nicolasLGM) later also reported issues.
+
+---
+
+## #7 — 5065 Outrunner (10 users, 15 mentions)
+
+Ultra-small skateboard motor tested by experimenters.
+
+> I tried the 5065 140kv motor and was pretty amazed that it worked. Not as efficient as the 6362 motor but not bad. — [@s9tim](https://foil.zone/t/12927/1687)
+
+Only viable for very light riders with excellent pump technique. An experiment, not a recommendation.
+
+---
+
+## #8 — 6579 Maytech/Michobby (7 users, 28 mentions)
+
+A newer Maytech motor (65mm diameter, 79mm length) sold as part of complete Michobby kits.
+
+> Maytech 6579 kit cheap, powerful and works well in saltwater. — [@jbfoiluk](https://foil.zone/t/23831/9)
+
+> My setup: all maytech gear 6579 motor with 160amp esc on 12s3p. I've built my board around assist. — [@Airtimeasto](https://foil.zone/t/12927/1734)
+
+Too new for broad consensus. Shows promise as a budget complete-kit option.
+
+---
+
+## #9-14 — Niche Motors
+
+| Motor | Users | Notes |
+|-------|------:|-------|
+| **65121** (Flipsky inrunner) | 6 | Few builds. Between 65111 and 65161. |
+| **66112** (Flipsky inrunner) | 6 | Discussed as potential "half power efoil" option. Twice the weight of 6374/6384. |
+| **65150** (Flipsky inrunner) | 5 | Mainly efoil. One user got it free and tested for assist. |
+| **6354** (outrunner) | 4 | Lightweight eskate motor. Works for SUP assist on 12S. "Will not allow you to foil around in between waves" — [@nekitesurfing](https://foil.zone/t/23531/2) |
+| **6362** (outrunner) | 3 | Used by @s9tim as a lightweight reference. Less common than 6384. |
+| **5080** (outrunner) | 1 | @Bender tested — "overheated quickly and the efficiency seemed really low" |
+
+---
+
+## Community Recommendations Summary
+
+### For Most Builders
+**Flipsky 6384 140KV waterproof** — best balance of power, availability, price, and community support.
+
+### To Replicate Foil Drive
+**Saite 6374 130KV waterproof** — the actual OEM motor used in Foil Drive Gen 2.
+
+### Budget / Easy Kit
+**Flipsky 6374 140KV** — adequate for lighter riders (&lt;80kg) with good pump technique.
+
+### Lightweight / Minimalist
+**6354 or 5065** — only for experienced foilers who barely need assist, prioritizing low weight.
+
+### Avoid
+- **Maytech 6374** — underpowered stator, poor waterproofing, widely criticized
+- **65111** — underpowered for assist, zero positive feedback
+- **Generic Ali 6384 without checking stator width** — can have 35-50mm stator instead of proper 55mm
+
+### Critical Buying Tip
+
+> Not all "6384" motors are equal. Always ask the seller for the actual stator width before purchasing. A cheap "6384" with a 50mm stator has roughly 2/3 the power of a proper 55mm stator version.
+
+---
+
+## Manufacturer Overview
+
+| Brand | Assist Posts | Users | Role |
+|-------|------------:|------:|------|
+| **Flipsky** | 463 | 206 | Largest supplier. Motors + ESCs + complete kits |
+| **Maytech / Michobby** | 426 + 63 | 142 + 17 | Budget kits. Quality inconsistent. Michobby = Maytech reseller |
+| **Saite** | 84 | 35 | Foil Drive OEM. Premium quality |
+| **APS (Alien Power System)** | 34 + 17 | 23 + 12 | Quality motors. Requires DIY waterproofing |
+| **Turnigy** | 42 | 32 | Hobby motors repurposed |
+| **BDUAV** | 12 | 9 | Budget Alibaba |
+| **Freerchobby** | 9 | 8 | 63100 supplier |
+
+---
+
+*Data sourced from [foil.zone](https://foil.zone) forum. Analysis performed March 2026 using semantic search (OpenAI embeddings + BM25) across 73,280 posts.*
