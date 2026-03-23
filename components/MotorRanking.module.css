@@ -1,0 +1,378 @@
+.container {
+  width: 100%;
+  max-width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+/* Main ranking table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  margin-bottom: 2rem;
+}
+
+.table th {
+  background: #1a1a2e;
+  color: #fff;
+  padding: 10px 12px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.table th:first-child {
+  border-radius: 6px 0 0 0;
+}
+
+.table th:last-child {
+  border-radius: 0 6px 0 0;
+}
+
+.table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #e5e7eb;
+  vertical-align: top;
+}
+
+.table tr:hover {
+  background: #f8f9ff;
+}
+
+.table tr:nth-child(even) {
+  background: #fafafa;
+}
+
+.table tr:nth-child(even):hover {
+  background: #f0f1ff;
+}
+
+.rank {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #1a1a2e;
+  text-align: center;
+  width: 40px;
+}
+
+.motorName {
+  font-weight: 600;
+  color: #111;
+  white-space: nowrap;
+}
+
+.motorNote {
+  font-size: 0.75rem;
+  color: #888;
+  font-weight: 400;
+}
+
+.numCell {
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.plusCell {
+  text-align: center;
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.minusCell {
+  text-align: center;
+  color: #dc2626;
+  font-weight: 600;
+}
+
+/* Sentiment badges */
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.badgePositive {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.badgeNegative {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.badgeMixed {
+  background: #fef9c3;
+  color: #854d0e;
+}
+
+.badgeNeutral {
+  background: #f3f4f6;
+  color: #4b5563;
+}
+
+.useCase {
+  font-size: 0.78rem;
+  color: #666;
+}
+
+/* Detail cards */
+.detailSection {
+  margin-bottom: 2.5rem;
+}
+
+.detailHeader {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.detailRank {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #1a1a2e;
+  min-width: 40px;
+}
+
+.detailName {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.detailUsers {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 400;
+}
+
+.detailBody {
+  padding: 0 0 0 8px;
+}
+
+.detailDesc {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.quote {
+  border-left: 3px solid #d1d5db;
+  padding: 8px 16px;
+  margin: 12px 0;
+  color: #555;
+  font-style: italic;
+  background: #fafafa;
+  border-radius: 0 4px 4px 0;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.quoteAuthor {
+  color: #2563eb;
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.quoteAuthor:hover {
+  text-decoration: underline;
+}
+
+.specGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.specItem {
+  background: #f3f4f6;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.82rem;
+}
+
+.specLabel {
+  font-weight: 600;
+  color: #374151;
+}
+
+.specValue {
+  color: #555;
+}
+
+.proscons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 12px 0;
+}
+
+@media (max-width: 640px) {
+  .proscons {
+    grid-template-columns: 1fr;
+  }
+}
+
+.prosList, .consList {
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+.prosList {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+}
+
+.consList {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+}
+
+.prosTitle, .consTitle {
+  font-weight: 700;
+  margin-bottom: 6px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.prosTitle {
+  color: #166534;
+}
+
+.consTitle {
+  color: #991b1b;
+}
+
+.listItem {
+  margin: 4px 0;
+  padding-left: 16px;
+  position: relative;
+  line-height: 1.4;
+}
+
+.listItem::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.prosList .listItem::before {
+  background: #16a34a;
+}
+
+.consList .listItem::before {
+  background: #dc2626;
+}
+
+/* Recommendations */
+.recsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 12px;
+  margin: 1rem 0 2rem;
+}
+
+.recCard {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  background: #fff;
+}
+
+.recLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.recMotor {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.recDesc {
+  font-size: 0.82rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.recCardAvoid {
+  border-color: #fca5a5;
+  background: #fef2f2;
+}
+
+/* Manufacturer table */
+.mfgTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  margin: 1rem 0;
+}
+
+.mfgTable th {
+  background: #f9fafb;
+  padding: 8px 12px;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.mfgTable td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 2rem 0;
+}
+
+.footer {
+  font-size: 0.78rem;
+  color: #9ca3af;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.sectionTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 2rem 0 1rem;
+  color: #1a1a2e;
+}
