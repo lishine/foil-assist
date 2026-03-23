@@ -3,7 +3,11 @@
   max-width: 100% !important;
 }
 
-/* When no TOC, content should stretch fully to the right */
 .nextra-content {
   max-width: 100% !important;
+}
+
+/* Hide the right TOC panel on the motor page and expand content */
+.nextra-toc {
+  display: none !important;
 }
