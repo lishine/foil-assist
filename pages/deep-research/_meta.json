@@ -1,3 +1,11 @@
 {
-  "motor": "Motor Ranking"
+  "motor": {
+    "title": "Motor Ranking",
+    "theme": {
+      "toc": false,
+      "pagination": false,
+      "editLink": false,
+      "feedback": false
+    }
+  }
 }

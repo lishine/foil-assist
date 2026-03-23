@@ -382,7 +382,7 @@ export function MotorRanking() {
     <div className={s.container}>
       <h1 className={s.title}>Foil Assist Motor Ranking by User Adoption</h1>
       <p className={s.subtitle}>
-        Ranked by unique users on <a href="https://foil.zone">foil.zone</a> &middot; 73,280 posts analyzed &middot; March 2026
+        Ranked by unique users on <a href="https://foil.zone">foil.zone</a> &middot; March 2026
       </p>
 
       {/* ── Ranking table ── */}
